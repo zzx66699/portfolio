@@ -461,8 +461,39 @@ button {
 	} 
 }
 
+/* separate projects items */
+.projects-collection {
+	display: grid;
+	grid-gap: 2em;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.project-item {
+	overflow: hidden;
+}
+
+.project-img {
+    transition: 
+        transform 750ms cubic-bezier(.5, 0, .5, 1),
+        opacity 250ms linear;
+	object-fit: cover;
+	width: 100%;
+}
+
+.project-item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.project-img:hover,
+.project-item:focus .project-img {
+    transform: scale(1.2);
+    opacity: .5;
+}
+
+
 /* separate projects container */
-.projects__row {
+/* .projects__row {
 	display: grid;
 	grid-template-columns: 1.5fr 1fr;
 	grid-gap: 5rem;
@@ -529,7 +560,7 @@ button {
 	.projects__row-content-desc {
 		font-size: 1.7rem; 
 	} 
-}
+} */
 
 
 /* ----------- about ---------- */  
