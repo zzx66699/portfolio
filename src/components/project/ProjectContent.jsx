@@ -25,11 +25,11 @@ export default function ProjectContent({content}) {
 
     return (
         <section className="project-details section-pink">
-            <div className="main-container">
+            <article className="main-container">
                 <div className="project-details__content">
                     {contentEl}
                 </div>
-            </div>
+            </article>
         </section>
     )
 }
