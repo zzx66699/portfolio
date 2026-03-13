@@ -1,8 +1,56 @@
 export const projectsData = [
     {
+        projectId: "basketball-scoreboard",
+        src: "/img/basketball-scoreboard.png",
+        alt: "Basketball Scoreboard",
+        liveLink: "https://basketball-scoreboard-timer.netlify.app/",
+        codeLink: "https://github.com/zhixin99/web-mini-projects/tree/main/basketball-scoreboard",
+        content: [
+            { 
+                type: "p", 
+                text: "Basketball scoreboard app is my first solo project during my frontend studies at Scrimba." 
+            },
+            {
+                type: "p",
+                text: "This project uses vanilla Javascript, HTML and CSS for tracking and displaying basketball game scores in real-time. It allows users to start, pause and resume the game."
+            },
+            { type: "h2", text: "Key learning points" },
+            { 
+                type: "list", 
+                text: [
+                    "script tag",
+                    "variables",
+                    "numbers & strings",
+                    "function",
+                    "the DOM",
+                    "getElementById",
+                    "addEventListener",
+                    "textContent",
+                    "disabled",
+                    "setInterval & clearInterval",
+                    "@font-face & font-family"
+                    ]
+            },
+            { type: "h2", text: "Tools Used" },
+            {
+                type: "tools",
+                text: [
+                    "JavaScript", 
+                    "CSS", 
+                    "Flexbox", 
+                    "@font-face Integration",
+                    "Asynchronous JavaScript",
+                    "UX Design",
+                    "Conditional Logic",
+                    "String Formatting"
+                ]
+            }
+        ],
+    }, 
+    {
         projectId: "tenzies",
         src: "/img/tenzies.png",
-        alt: "Tenzies game",
+        alt: "Tenzies Game",
         liveLink: "https://play-tenzie-game.netlify.app/",
         codeLink: "https://github.com/zhixin99/web-mini-projects/tree/main/tenzies",
         content: [
@@ -52,12 +100,7 @@ export const projectsData = [
                     "Web Accessibility (ARIA)"
                 ]
             }
-        ],
-    }, 
-    {
-        projectId: "oldagram",
-        src: "/img/oldagram-square.png",
-        alt: "oldagram"
+        ]
     }, 
     {   
         src: "/img/password-generator.jpg",
