@@ -1,18 +1,20 @@
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-import Main from "./pages/Main"
-import Project from "./pages/Project"
+import HomePage from "./pages/HomePage"
+import Journal from "./pages/Journal"
 import Header from "./layout/Header"
 import Footer from "./layout/Footer"
+import ScrollToTop from "./ScrollToTop"
 
 export default function App() {
 
 	return (
 		<BrowserRouter>
+			<ScrollToTop />
 			<Header />
 			<Routes>
-				<Route path="/" element={<Main/>}/>
-				<Route path="/project/:projectId" element={<Project/>}/>
+				<Route path="/" element={<HomePage/>}/>
+				<Route path="/journal" element={<Journal/>}/>
 			</Routes>
 			<Footer/>
 		</BrowserRouter>

@@ -1,26 +1,18 @@
 export default function Footer() {
     return (
-        <footer className="main-footer section-black">
-            <div className="main-container">
-                <div className="main-footer__container">
-                    <p className="main_footer__designer">Designed & Built by Zhu Zhixin</p>
-                    <ul className="main-footer__social-list">
+        <footer className="footer">
+            <div className="container">
+                <div className="footer__container">
+                    <p className="footer__designer">Designed & Built by Zhu Zhixin</p>
+                    <ul className="footer__social-list">
                         <li>
                             <a href="https://www.linkedin.com/in/zhuzhixin-99/">
-                                <img
-                                className="main-footer__icon"
-                                src="/img/linkedin-ico.png"
-                                alt="icon"
-                                />
+                                <i className="fa-brands fa-linkedin footer__icon"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="https://github.com/zzx66699">
-                                <img
-                                className="main-footer__icon"
-                                src="/img/github-ico.png"
-                                alt="icon"
-                                />
+                            <a href="https://github.com/zhixin99">
+                                <i className="fa-brands fa-github footer__icon"></i>
                             </a>  
                         </li>           
                     </ul>

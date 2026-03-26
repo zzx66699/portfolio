@@ -1,20 +1,14 @@
-export default function Section({ bgColor, title, subtitle, textColor, children }) {
+export default function Section({ title, description, sectionColor, children, id }) {
 
     return (
-        <section className={`sec-pad section-${bgColor}`}>
+        <section className="section-padding" style={{"--section-color": sectionColor}} id={id}>
             <div className="main-container">
-                <h2 className="heading-sec__mb-med">
-                    <span className={`heading-sec__main ${textColor}-divider text-${textColor}`}>
-                        {title}
-                    </span>
-                    
-                    <span className="heading-sec__sub">
-                    {subtitle}
-                    </span>
-                </h2>
+                <div className="section__header">
+                    <h2 className="section__header-main">{title}</h2>
 
+                    <p className="section__header-sub">{description}</p>
+                </div>
 
-                
                 {children}
             </div>
         </section>

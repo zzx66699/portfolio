@@ -1,17 +1,22 @@
-import ProjectItem from "./ProjectItem"
-import { projectsData } from "../../data/projectsData"
+import ProjectCard from "../layout/ProjectCard"
+import { journalData } from "../../data/journalData"
 export default function ProjectSection() {
 
-    const projectEl = projectsData.map(project => 
-        <ProjectItem
-            key={project.projectId}
-            projectId={project.projectId}
+    const projectEl = journalData.slice(0,3).map(project => 
+        <ProjectCard
+            key={project.header}
+            header={project.header}
             src={project.src}
             alt={project.alt}
+            liveLink={project.liveLink}
+            codeLink={project.codeLink}
+            date={project.date}
+            description={project.description}
+            tags={project.tags}
         />
     )
     return (
-        <div className="projects-collection">
+        <div className="journal__projects-container">
             {projectEl}
         </div>
 

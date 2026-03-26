@@ -1,42 +1,17 @@
 export default function Hero() {
 	return (
-		<section className="home-hero section-black">
-			<div className="home-hero__content">
-				<h1>Hey, I'm <span className="heading-primary">Zhu Zhixin</span></h1>
+		<section className="hero">
+			<div className="main-container hero__container">
+				<h1>Hey, I'm Zhu Zhixin</h1>
 				
-				<div className="home-hero__info">
-					<p className="text-primary">
-						I am a self-learning frontend developer based in the Netherlands. I have a passion for innovation and cutting-edge technology. I try my best to create things with love.
+				<div className="hero__description">
+					<p className="hero__description">
+						I am a self-learning frontend developer based in the Netherlands. 
+					</p>
+					<p>
+						My path to frontend development isn't a straight line, but every step has been a deliberate part of my growth.
 					</p>
 				</div>
-				
-				<div className="home-hero__cta">
-					<a href="./#projects" className="btn btn-pink btn--bg">See my projects</a>
-				</div>
-			</div>
-
-			<div className="home-hero__socials">
-				<div className="home-hero__social">
-				<a href="https://www.linkedin.com/in/zhuzhixin-99/" className="home-hero__social-icon-link">
-					<img
-					src="/img/linkedin-ico.png"
-					alt="icon"
-					className="home-hero__social-icon"
-					/>
-				</a>
-				</div>
-				<div className="home-hero__social">
-				<a href="https://github.com/zzx66699" className="home-hero__social-icon-link">
-					<img
-					src="/img/github-ico.png"
-					alt="icon"
-					className="home-hero__social-icon"
-					/>
-				</a>
-				</div>
-			</div>
-			<div className="home-hero__mouse-scroll-cont">
-				<div className="mouse"></div>
 			</div>
 		</section>
 	) 
