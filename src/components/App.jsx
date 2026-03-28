@@ -1,6 +1,6 @@
 
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
-import HomePage from "./pages/HomePage"
+import Home from "./pages/Home"
 import Journal from "./pages/Journal"
 import Header from "./layout/Header"
 import Footer from "./layout/Footer"
@@ -13,7 +13,7 @@ export default function App() {
 			<ScrollToTop />
 			<Header />
 			<Routes>
-				<Route path="/" element={<HomePage/>}/>
+				<Route path="/" element={<Home/>}/>
 				<Route path="/journal" element={<Journal/>}/>
 			</Routes>
 			<Footer/>

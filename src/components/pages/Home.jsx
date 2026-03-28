@@ -1,12 +1,12 @@
 
-import Hero from "../main/Hero"
-import Section from "../main/Section"
-import ProjectSection from "../main/ProjectSection"
+import Hero from "../home/Hero"
+import Section from "../home/Section"
+import ProjectSection from "../home/ProjectSection"
 import { Link } from "react-router-dom"
-import Experience from "../main/Experience"
+import Experience from "../home/Experience"
 import { experiences } from "../../data/experience"
 
-export default function HomePage() {
+export default function Home() {
     return (
         <main>
             <Hero/>
