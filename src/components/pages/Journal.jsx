@@ -1,10 +1,10 @@
 import { journalData } from "../../data/journalData"
-import ProjectCard from "../layout/ProjectCard"
+import MiniProjectCard from "../layout/MiniProjectCard"
 
 export default function Journal() {
 
     const projectContainerEl = journalData.map( project => (
-        <ProjectCard
+        <MiniProjectCard
             key={project.header}
             header={project.header}
             src={project.src}

@@ -1,10 +1,11 @@
 
 import Hero from "../home/Hero"
 import Section from "../home/Section"
-import ProjectSection from "../home/ProjectSection"
+import ProjectsSection from "../home/ProjectsSection"
 import { Link } from "react-router-dom"
 import Experience from "../home/Experience"
 import { experiences } from "../../data/experience"
+import LearnJournalSection from "../home/LearnJournalSection"
 
 export default function Home() {
     return (
@@ -54,18 +55,20 @@ export default function Home() {
                 sectionColor="var(--color-green)"
                 id="journal"
             >   
-                <ProjectSection />
-                <Link to="/journal" className="btn btn-big btn-green">Read Full Learning Journal</Link>
+                <LearnJournalSection />
+                <Link to="/journal" className="btn btn-big btn-green-reverse">Read Full Learning Journal</Link>
             </Section>
 
             <Section 
                 key="projects"
                 title="Projects"
-                description="Here are 3 top pick mini-project that I created as part of my learning journey. "
+                description="Here are featured solo projects that I have been working on so far."
                 sectionColor="var(--color-blue)"
                 id="projects"
             >   
+                <ProjectsSection  />
             </Section>
+
 
             <Section 
                 key="contact"

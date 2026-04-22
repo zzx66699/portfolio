@@ -30,6 +30,7 @@
 
 	--ff-title: "Bricolage Grotesque", sans-serif;
 	--ff-text: sharp-sans, sans-serif;
+	--ff-text-bold: sharp-sans-bold, sans-serif;
 }
 
 html {
@@ -187,6 +188,30 @@ p {
 	color: var(--color-green);
 }
 
+.btn-green-reverse {
+	background-color: var(--color-green);
+	color: white;	
+	text-align: center;
+	font-family: var(--ff-text-bold);
+}
+
+.btn-blue {
+	border-color: var(--color-blue);
+	color: var(--color-blue);	
+	text-align: center;
+}
+
+.btn-blue-reverse{
+	background-color: var(--color-blue);
+	color: white;	
+	text-align: center;
+	font-family: var(--ff-text-bold);
+}
+
+.btn-full-width {
+	width: 100%;
+}
+
 .text-highlight {
 	color: var(--section-color);
 	font-family: "sharp-sans-bold", sans-serif;
@@ -328,7 +353,6 @@ header {
 
 
 /* ========== About me section ========== */
-
 .about-me__intro-container {
 	display: flex; 
 	justify-content: space-between;
@@ -432,7 +456,6 @@ header {
 
 
 /* ===================== Learning Journal =================*/
-
 .journal__main {
 	padding-top: 110px; 
 }
@@ -448,7 +471,7 @@ header {
 	gap: 1em; 
 }
 
-.project-card {
+.mini-project-card {
 	background: var(--color-light);
 	padding: 1em; 
 	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.08);
@@ -467,6 +490,12 @@ time {
 	aspect-ratio: 16 / 9;
 	overflow: hidden;
 	border-radius: 10px;
+}
+
+.project-card__text-container {
+	display: flex; 
+	flex-direction: column;
+	gap: 1em; 
 }
 
 .project-img {
@@ -498,7 +527,7 @@ time {
 
 .project-card__actions {
 	display: flex; 
-	justify-content: left;
+	justify-content: space-between;
 	font-size: 1rem;
 	margin-top: auto; 
 	gap: 0.4em; 
@@ -516,6 +545,101 @@ time {
 }
 
 
+/* ===================== Solo Projects =================*/
+.solo-project-card {
+	background: var(--color-light);
+	padding: 1em; 
+	box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.08);
+	display: grid; 
+	grid-template-columns: 2fr 1fr;
+	gap: 1em; 
+	border-radius: 10px;
+}
+@media (max-width: 1260px) and (min-width: 56.25em) {
+	.solo-project-card {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media only screen and (max-width: 56.25em) {
+	.solo-project-card {
+		display: flex; 
+		flex-direction: column;
+	}
+}
+
+.solo-project-card__title {
+	color: var(--color-blue);
+}
 
 
+/* ===================== Blog Page =================*/
+.blog__main {
+	display: flex; 
+	flex-direction: column;
+	gap: 3em;
+}
 
+.blog__main-img-container {
+	padding-top: 100px;
+}
+
+.blog__main-image {
+	width: 100%; 
+	display: block;
+}
+
+
+.blog__h1 {
+	color: var(--color-black);
+
+	margin: 0; 
+}
+
+.blog__h2 {
+	text-align: left;
+	margin-bottom: 0.5em; 
+	color: var(--color-blue)
+}
+
+.blog__p, .blog__list {
+	margin-bottom: 2.5em; 
+}
+
+.blog__image {
+	width: 100%; 
+	display: block;
+	margin-top: -1.5em;
+	margin-bottom: 2.5em;
+}
+
+.blog__text-highlight {
+	color: var(--color-blue);
+}
+
+.blog__text-bold {
+	font-family: var(--ff-text-bold);
+}
+
+.blog__text-grey-background {
+	background-color: lightgray;
+}
+
+.blog__li {
+	margin-bottom: 0.8em; 
+	list-style: circle;
+	list-style-position: inside;
+	margin-left: 2em; 
+}
+
+.blog__buttons {
+	display: flex; 
+	justify-content: left;
+	font-size: 1rem;
+	margin-top: 1em; 
+	gap: 0.4em; 
+}
+@media only screen and (max-width: 37.5em) {
+	.blog__buttons {
+		flex-direction: column;
+	} 
+}

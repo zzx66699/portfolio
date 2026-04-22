@@ -1,9 +1,9 @@
-import ProjectCard from "../layout/ProjectCard"
-import { journalData } from "../../data/journalData"
-export default function ProjectSection() {
+import SoloProjectCard from "../layout/SoloProjectCard"
+import { projectsData } from "../../data/projectsData.jsx"
 
-    const projectEl = journalData.slice(0,3).map(project => 
-        <ProjectCard
+export default function ProjectsSection() {
+    const projectEl = projectsData.map(project => 
+        <SoloProjectCard
             key={project.header}
             header={project.header}
             src={project.src}
@@ -13,6 +13,7 @@ export default function ProjectSection() {
             date={project.date}
             description={project.description}
             tags={project.tags}
+            projectId={project.projectId}
         />
     )
     return (
